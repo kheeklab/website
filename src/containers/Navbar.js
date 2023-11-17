@@ -37,13 +37,13 @@ function Navbar(){
             <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
                 <Bars3Icon className="h-5 inline-block w-5"/>
             </label>
-        </div> 
-  
-  
+        </div>
+
+
         <div className="flex-1 px-2 mx-2">
             <Link href="/">
             <span className='font-bold text-xl'>
-                <img className="mask inline-block mr-2 mask-circle w-10" src="/android-chrome-192x192.png" /> Landing Page
+                <img className="mask inline-block mr-2 mask-circle w-10" src="/android-chrome-192x192.png" /> Kheek Lab
             </span>
             </Link>
         </div>
@@ -52,14 +52,14 @@ function Navbar(){
                 <Navlinks />
           </ul>
 
-        
+
           <label className="swap ">
                 <input type="checkbox"/>
                 <SunIcon data-set-theme="light" data-act-class="ACTIVECLASS" className={"fill-current w-5 h-5 "+(currentTheme === "dark" ? "swap-on" : "swap-off")}/>
                 <MoonIcon data-set-theme="dark" data-act-class="ACTIVECLASS" className={"fill-current w-5 h-5 "+(currentTheme === "light" ? "swap-on" : "swap-off")} />
             </label>
 
-          <div className="dropdown ml-6 dropdown-end">
+          {/* <div className="dropdown ml-6 dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-6 rounded-full">
                     <img src="https://placeimg.com/80/80/people" alt="profile" />
@@ -74,7 +74,7 @@ function Navbar(){
                     <div className="divider mt-0 mb-0"></div>
                     <li><a onClick={logoutUser}>Logout</a></li>
                 </ul>
-            </div>
+            </div> */}
         </div>
       </div>
       </div>
